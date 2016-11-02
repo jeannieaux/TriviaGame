@@ -1,43 +1,30 @@
 
 	
 
-/*var count = 61;
-var counter= setInterval(timer, 1000);
 
 
 
-function timer(){
-	count -= 1;
-	if (count == 20){
-		alert("You have 20 seconds left)")
-	}
-	else if(count == 0){
 
-		clearInterval(counter);
-		alert("Sorry! Time's up!");
-	}
-     $("#num").html(count); 
-	}
 
-function answerSubmit(){
-	var correctAnswer = document.getElementById("noodle3")
-	if (correctAnswer.checked === true){
-		score++;
-		alert("Correct. Your answer is now" + score)
-
-	}
-}
-  
-*/
 
 
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct=0;
 
 var questions = [
        ["How do you know your pasta is cooked?", "Stare at it", "Throw it out the window", "Throw it on the wall", "C"],
-       ["How old is Sparky?", "11","2","50","B"],
-       ["What is Jeannie's favorite color?","Blue", "Purple", "Red", "B"],
+       ["One barrel of wine can produce approximately how many glasses of wine?", "3000","1000","800","B"],
+       ["Most European wines are named after:","The owner of the vineyard","Color of the grape","Geographical region", "C"],
+       ["In Brazil a popular pizza topping is:", "Peas","Anchovies","Cucumbers","A"],
+       ["Why would you use a bain-marie?","Make bread","To slow cook", "To call Marie","B"],
+       ["According to the International Wines and Spirits Record (IWSR), in 2013 this country was the largest consumer of red wines:","Russia","China","France","B"],
+       ["Peanuts are a type of:","legume","nut","fruit","A"],
+       ["Are sweet potatoes and yams the same thing?","Yes","No","They're a combination of the two","B"],
+
+
+
   ];
+
+
 
 function _(x) {
 	return document.getElementById(x);
