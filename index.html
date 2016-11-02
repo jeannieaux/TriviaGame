@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
     <title>Vittles and Vino Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 
 <!-- I'm using a template from W3 Schools for the shell of the website-->
@@ -40,25 +42,28 @@ body, html {height: 100%}
     <div class="w3-container w3-black">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-closebtn w3-xxlarge">×</span>
       <h1>Vittles and Vino Trivia Game</h1>
+      <h4 id = "test_status"></h2>
+      <div id = "test"></div>
     </div>
-
-    <form action="results.html" method="get" onsubmit="return">
+<!--
+    <form action="results.html" method="get" onsubmit="return finalAnswer()">
     <div class="w3-container">
-
-<!-- Timer -->
+-->
+<!-- Timer 
 <div class="static'">
 <h3> Time you have left remaining </h3>
 <h3 id="num">" "</h3>
 </div>
+-->
 
 <!-- If you group your answers under the same "name" then only one answer can be selected at a time -->
 
-      <h5>How do you know your pasta is cooked?</h5>
+<!--      <h5>How do you know your pasta is cooked?</h5>
       <p class="w3-text-grey">
       <input type="radio" name="A" value="no" id="noodle1"/> Stare at it <br>
       <input type="radio" name="A" value="no" id="noodle2"/> Throw it out the window <br>
       <input type="radio" name="A" value="yes" id="noodle3"/> Throw it on the wall <br>
-      <input type="radio" name="A" value="yes" id="noodle4"/> Put it on the back of your hand <br>
+      <input type="radio" name="A" value="no" id="noodle4"/> Put it on the back of your hand <br>
       </p>
 
 
@@ -124,14 +129,14 @@ body, html {height: 100%}
       <input type="radio" name="H" value="yes" id="yams2"/> No            
       </p>
      
-     <input type="submit" value="Submit">
+     <input type="submit" value="Submit" id="Submit" onclick="answerSubmit()"/>
      
     </div>
     </form>
   </div>
 </div>
-  
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+  -->
+
 </body>
 </html>
 

@@ -1,9 +1,18 @@
+button{
+	padding-left: 300px;
+}
 h1{
 	background-color: black;
 	font-weight: bold;
 	text-align: center;
 }
+h2{
+	text-align: center;
+}
 
+h4{
+	text-align: center;
+}
 h3{
 	color: red;
 	text-align: center;
@@ -12,3 +21,5 @@ h3{
     display:inline-block;
     text-align: center;
 }
+
+
