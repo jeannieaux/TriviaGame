@@ -1,4 +1,13 @@
-
+var count = 61;
+var counter= setInterval (timer, 1000);
+window.setTimeout(timer, 3000);
+function timer (){
+	count -= 1;
+	if(count == 0){
+		clearInterval(counter);
+	}
+	document.getElementById('num').innerHTML = count;
+}
 	
 
 
@@ -19,10 +28,7 @@ var questions = [
        ["According to the International Wines and Spirits Record (IWSR), in 2013 this country was the largest consumer of red wines:","Russia","China","France","B"],
        ["Peanuts are a type of:","legume","nut","fruit","A"],
        ["Are sweet potatoes and yams the same thing?","Yes","No","They're a combination of the two","B"],
-
-
-
-  ];
+];
 
 
 

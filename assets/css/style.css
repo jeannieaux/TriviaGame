@@ -23,5 +23,13 @@ h4{
 
 }
 
+h5{
+	text-align: center;
+}
 
+#num{
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+}
 
