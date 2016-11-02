@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Vittles and Vino Trivia Game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel= "stylesheet"
+<!-- I'm using a template from W3 Schools -->
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('assets/images/noodlecouple.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-xxlarge w3-padding-jumbo">
+   <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-btn w3-hover-light-grey"> Start Quiz</button></p>
+    <!--    <p>logo</p>     -->
+
+
+  </div>
+  
+  <div class="w3-display-bottomleft w3-padding-jumbo">
+
+      <p class="w3-xlarge"> Vittles and Vino Trivia Game</p>     
+    
+    <p class="w3-large">Created by Jeannie Gaines</p>
+
+    <p>powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</div>
+</div>
+
+
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-closebtn w3-xxlarge">×</span>
+      <h1>Vittles and Vino Trivia Game</h1>
+    </div>
+    <form action="submission.html" method="get" onsubmit="return">
+    <div class="w3-container">
+
+<!-- If you group your answers under the same "name" then only one answer can be selected at a time -->
+
+      <h5>How do you know your pasta is cooked?</h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="A" value="no" id="noodle"/> Stare at it <br>
+      <input type="radio" name="A" value="no" id="noodle"/> Throw it out the window <br>
+      <input type="radio" name="A" value="yes" id="noodle"/> Throw it on the wall <br>
+      <input type="radio" name="A" value="yes" id="noodle"/> Put it on the back of your hand <br>
+      </p>
+
+
+
+      <h5>One barrel of wine can produce approximately how many glasses of wine?</h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="B" value="no" id="barrel"/> 3000 <br>
+      <input type="radio" name="B" value="yes" id="barrel"/> 1000<br>
+      <input type="radio" name="B" value="no" id="barrel"/> 800 <br>
+      <input type="radio" name="B" value="yes" id="barrel"/> 200 <br>
+      </p>
+
+
+
+      <h5>Most European wines are named after: </h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="C" value="no" id="geo"/> The owner of the vineyard <br>
+      <input type="radio" name="C" value="no" id="geo"/> How long it's been fermenting <br>
+      <input type="radio" name="C" value="yes" id="geo"/> Geographical region <br>
+      <input type="radio" name="C" value="no" id="geo"/> Color of the grape<br>
+      </p>
+
+
+      <h5>In Brazil, a popular pizza topping is: </h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="D" value="no" id="pizza"/> Anchovies <br>
+      <input type="radio" name="D" value="yes" id="pizza"/> Peas <br>
+      <input type="radio" name="D" value="no" id="pizza"/> Sausage <br>
+      <input type="radio" name="D" value="no" id="pizza"/> Cucumbers<br>
+      </p>
+
+
+      <h5>Why would you use a bain-marie?</h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="E" value="no" id="bath"/> To take a temperature<br>
+      <input type="radio" name="E" value="no" id="bath"/> To make bread<br>
+      <input type="radio" name="E" value="no" id="bath"/> To call Marie <br>
+      <input type="radio" name="E" value="yes" id="bath"/> To slow cook <br>
+      </p>
+
+
+      <h5>According to the International Wines and Spirits Record (IWSR), in 2013 this country was the largest consumer of red wines: </h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="F" value="no" id="iwsr"/> Russia <br>
+      <input type="radio" name="F" value="yes" id="iwsr"/> China<br>
+      <input type="radio" name="F" value="no" id="iwsr"/> New Zealand <br>
+      <input type="radio" name="F" value="no" id="iwsr"/> France <br>
+      </p>
+
+      
+      <h5>Peanuts are a type of:</h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="G" value="yes" id="peanuts"/> Legume <br>
+      <input type="radio" name="G" value="no" id="peanuts"/> Nut<br>
+      <input type="radio" name="G" value="no" id="peanuts"/> Fruit <br>
+      <input type="radio" name="G" value="no" id="peanuts"/> Potato <br>
+      </p>
+
+      
+
+      <h5>Are sweet potatoes and yams the same thing?</h5>
+      <p class="w3-text-grey">
+      <input type="radio" name="H" value="no" id="yams"/> Yes <br>
+      <input type="radio" name="H" value="yes" id="yams"/> No            
+      </p>
+     
+     <input typr = "submit" value="submit"/>
+    </div>
+    </form>
+  </div>
+</div>
+  
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
+
