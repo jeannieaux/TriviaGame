@@ -1,6 +1,5 @@
-/* This was done using soley javascript. I watched a tutorial on how to do this and
-tried to convert all the javascript into jquery but to no avail*/
-
+/* This was done using soley javascript.*/
+ 
 var count = 61;
 var counter= setInterval (timer, 1000);
 window.setTimeout(timer, 3000);
