@@ -1,3 +1,6 @@
+/* This was done using soley javascript. I watched a tutorial on how to do this and
+tried to convert all the javascript into jquery but to no avail*/
+
 var count = 61;
 var counter= setInterval (timer, 1000);
 window.setTimeout(timer, 3000);
@@ -5,16 +8,11 @@ function timer (){
 	count -= 1;
 	if(count == 0){
 		clearInterval(counter);
+		alert("Time's up! Please submit the remaining answers for your score.");
 	}
 	document.getElementById('num').innerHTML = count;
 }
 	
-
-
-
-
-
-
 
 
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct=0;
@@ -27,16 +25,16 @@ var questions = [
        ["Why would you use a bain-marie?","Make bread","To slow cook", "To call Marie","B"],
        ["According to the International Wines and Spirits Record (IWSR), in 2013 this country was the largest consumer of red wines:","Russia","China","France","B"],
        ["Peanuts are a type of:","legume","nut","fruit","A"],
-       ["Are sweet potatoes and yams the same thing?","Yes","No","They're a combination of the two","B"],
+       ["Are sweet potatoes and yams the same thing?","Yes","No","They're a combination of the two <br>(Do not try to make sense of the last answer)","B"],
 ];
 
-
+// In this case, _ calls the function so that I may use it elsewhere//
 
 function _(x) {
 	return document.getElementById(x);
 }  
 
-function renderQuestion(){
+function showQuestion(){
 	test = _("test");
 	if(pos >= questions.length){
 		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct </h2>";
@@ -45,6 +43,7 @@ function renderQuestion(){
 		correct=0;
 		return false;
 	}
+	//How many questions, in order of its position//
 	_("test_status").innerHTML = "(Question " +(pos+1) +" of " + questions.length +")";
 	question = questions[pos][0];
 	chA = questions[pos][1];
@@ -68,9 +67,9 @@ function checkAnswer(){
 			
 		}
 	pos++;
-	renderQuestion();
+	showQuestion();
 }
-window.addEventListener("load", renderQuestion, false);
+window.addEventListener("load", showQuestion, false);
 
 
 
